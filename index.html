@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNB Welding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* GLOBAL STYLES
+         -------------------------------------------------- */
+      /* Padding below the footer and lighter body text */
+
+      :root {
+        --main-color: #fcffff;
+        --accent-color: #dc143c;
+        --accent-color-hover: #b30e2f;
+        --bg-color: #3a4145;
+      }
+
+      body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-family: "Roboto Slab", serif;
+        /* color: rgb(var(--bs-tertiary-color-rgb)); */
+      }
+      /* CUSTOMIZE THE CAROUSEL
+         -------------------------------------------------- */
+      /* Carousel base class */
+      .carousel {
+        margin-bottom: 4rem;
+      }
+      /* Since positioning the image, we need to help out the caption */
+      .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+      }
+      /* Declare heights because of positioning of img element */
+      .carousel-item {
+        height: 42rem;
+      }
+      /* MARKETING CONTENT
+         -------------------------------------------------- */
+      /* Center align the text within the three columns below the carousel */
+      .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      /* rtl:begin:ignore */
+      .marketing .col-lg-4 p {
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+      }
+      /* rtl:end:ignore */
+      /* Featurettes
+         ------------------------- */
+      .featurette-divider {
+        margin: 5rem 0; /* Space out the Bootstrap 
+         <hr>
+         more */
+      }
+      /* Thin out the marketing headings */
+      /* rtl:begin:remove */
+      .featurette-heading {
+        letter-spacing: -0.05rem;
+      }
+      /* rtl:end:remove */
+      /* RESPONSIVE CSS
+         -------------------------------------------------- */
+      @media (min-width: 40em) {
+        /* Bump up size of carousel content */
+        .carousel-caption p {
+          margin-bottom: 1.25rem;
+          font-size: 1.25rem;
+          line-height: 1.4;
+        }
+        .featurette-heading {
+          font-size: 50px;
+        }
+      }
+      @media (min-width: 62em) {
+        .featurette-heading {
+          margin-top: 7rem;
+        }
+      }
+
+      body {
+        background-color: #fcffff;
+        color: var(--bg-color) !important;
+      }
+      .card-bottom {
+        border-bottom: 4px solid var(--accent-color);
+      }
+      .navbar {
+        background-color: #fcffff;
+        color: var(--bg-color);
+      }
+
+      .navbar a {
+        color: var(--bg-color) !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: var(--bg-color) !important;
+      }
+
+      #welcome-hero {
+        background-image: url("./images/hero-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: auto;
+        position: relative;
+      }
+
+      #welcome-hero::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .navbar .active {
+        background-color: var(--accent-color) !important;
+        color: var(--main-color) !important;
+      }
+      .btn-primary {
+        --bs-btn-bg: var(--accent-color) !important;
+        --bs-btn-border-color: var(--accent-color) !important;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: var(--accent-color-hover) !important;
+        --bs-btn-hover-border-color: var(--accent-color-hover) !important;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: var(--accent-color) !important;
+        --bs-btn-active-border-color: var(--accent-color) !important;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: var(--accent-color-hover) !important;
+        --bs-btn-disabled-border-color: var(--accent-color-hover) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <nav
+        id="navbar-example2"
+        class="navbar navbar-expand-md shadow navbar-dark fixed-top py-4"
+        style="border-bottom: 4px solid var(--accent-color)"
+      >
+        <div class="container-fluid col-xl-10 col-xxl-8">
+          <a class="navbar-brand" href="#home">CNB Welding</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav nav-pills ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="home">
+        <div
+          id="welcome-hero"
+          class="px-4 text-center border-bottom d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="col-md-6 pt-5" style="z-index: 99">
+            <h1 class="display-4 fw-bold text-white">CNB Welding</h1>
+            <p class="lead text-white text-center mb-4">
+              Quickly design and customize responsive mobile-first sites with
+              Bootstrap, the world's most popular front-end open source toolkit,
+              featuring Sass variables and mixins, responsive grid system,
+              extensive prebuilt components, and powerful JavaScript plugins.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+              <a
+                href="#about"
+                class="btn btn-primary shadow btn-lg px-4 me-sm-3"
+              >
+                Learn More
+              </a>
+              <a href="#contact" class="btn btn-secondary shadow btn-lg px-4">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container-fluid col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="row align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                src="https://s3-media0.fl.yelpcdn.com/bphoto/xmQOwWU7deU1CKDKicoYJw/o.jpg"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Bootstrap Themes"
+                width="700"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1
+                style="
+                  border-left: 4px solid var(--accent-color);
+                  padding-left: 15px;
+                "
+                class="display-5 fw-bold lh-1 mb-3"
+              >
+                Who are we?
+              </h1>
+              <p class="lead">
+                CNB Welding is family owned with more than 20 years of
+                experience. Services : Railing, Driveways, Patios, Gates,
+                Fences, Masonry, Waterfalls, Fish Ponds, Retaining Walls, Truck
+                and Trailer Repair and Much more. Aluminum and stainless steel
+                welding.
+              </p>
+              <br />
+              <div class="row">
+                <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg> -->
+                <div class="card shadow card-bottom">
+                  <div class="card-body">
+                    <div class="row align-items-center py-3">
+                      <div class="col-md-2">
+                        <svg
+                          class="bi text-body-secondary flex-shrink-0 me-3"
+                          width="3em"
+                          height="3em"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 512"
+                        >
+                          <path
+                            d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="col-md-10">
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                          ¡Hablamos Español!
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="services">
+        <div class="container-fluid col-xxl-8 px-4 py-5">
+          <div class="row g-5 py-5">
+            <div class="col-md-6">
+              <h1
+                style="
+                  border-left: 4px solid var(--accent-color);
+                  padding-left: 15px;
+                "
+                class="display-5 fw-bold lh-1 mb-3"
+              >
+                Services
+              </h1>
+              <p class="lead">
+                Quickly design and customize responsive mobile-first sites with
+                Bootstrap, the world's most popular front-end open source
+                toolkit, featuring Sass variables and mixins, responsive grid
+                system, extensive prebuilt components, and powerful JavaScript
+                plugins. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ea quis quidem maxime, expedita recusandae et ipsam
+                aliquid, dolorum vero autem sequi fugit doloremque architecto
+                officiis, facilis perspiciatis adipisci deserunt quibusdam.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <!-- <img src="https://s3-media0.fl.yelpcdn.com/bphoto/4pp5mdB7nVLPqKPXducCjA/o.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+              <div class="row gy-4">
+                <div class="col-md-6 col-sm-6">
+                  <div class="card shadow card-bottom h-100">
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center"
+                    >
+                      <div class="text-center">
+                        <div class="mb-1">
+                          <svg
+                            version="1.1"
+                            id="Uploaded to svgrepo.com"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            class="bi text-body-secondary flex-shrink-0 me-3"
+                            width="1.75em"
+                            height="1.75em"
+                            viewBox="0 0 32 32"
+                            xml:space="preserve"
+                          >
+                            <path
+                              class="stone_een"
+                              d="M5,15H4c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h1V15z M21,11H11v3h10V11z M23,10v5
+                                    c0,0.551-0.449,1-1,1H10c-0.551,0-1-0.449-1-1v-5c0-0.551,0.449-1,1-1h12C22.551,9,23,9.449,23,10z M22,10H10v5h12V10z M26,18.02
+                                    c0,1.317-0.13,2.631-0.388,3.922l-1.129,5.646C24.202,28.991,22.971,30,21.541,30H10.459c-1.43,0-2.661-1.009-2.942-2.412
+                                    l-1.129-5.646C6.13,20.65,6,19.337,6,18.02V7c0-2.761,2.239-5,5-5h10c2.761,0,5,2.239,5,5V18.02z M24,10c0-1.103-0.897-2-2-2H10
+                                    c-1.103,0-2,0.897-2,2v5c0,1.103,0.897,2,2,2h12c1.103,0,2-0.897,2-2V10z M28,10h-1v5h1c0.552,0,1-0.448,1-1v-3
+                                    C29,10.448,28.552,10,28,10z"
+                            />
+                          </svg>
+                        </div>
+                        <div class="">
+                          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                            Aluminum Welding
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="card shadow card-bottom h-100">
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center"
+                    >
+                      <div class="text-center">
+                        <div class="mb-1">
+                          <svg
+                            version="1.1"
+                            id="Uploaded to svgrepo.com"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            class="bi text-body-secondary flex-shrink-0 me-3"
+                            width="1.75em"
+                            height="1.75em"
+                            viewBox="0 0 32 32"
+                            xml:space="preserve"
+                          >
+                            <path
+                              class="stone_een"
+                              d="M5,15H4c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h1V15z M21,11H11v3h10V11z M23,10v5
+                                    c0,0.551-0.449,1-1,1H10c-0.551,0-1-0.449-1-1v-5c0-0.551,0.449-1,1-1h12C22.551,9,23,9.449,23,10z M22,10H10v5h12V10z M26,18.02
+                                    c0,1.317-0.13,2.631-0.388,3.922l-1.129,5.646C24.202,28.991,22.971,30,21.541,30H10.459c-1.43,0-2.661-1.009-2.942-2.412
+                                    l-1.129-5.646C6.13,20.65,6,19.337,6,18.02V7c0-2.761,2.239-5,5-5h10c2.761,0,5,2.239,5,5V18.02z M24,10c0-1.103-0.897-2-2-2H10
+                                    c-1.103,0-2,0.897-2,2v5c0,1.103,0.897,2,2,2h12c1.103,0,2-0.897,2-2V10z M28,10h-1v5h1c0.552,0,1-0.448,1-1v-3
+                                    C29,10.448,28.552,10,28,10z"
+                            />
+                          </svg>
+                        </div>
+                        <div class="">
+                          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                            Stainless Steel Welding
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="card shadow card-bottom h-100">
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center"
+                    >
+                      <div class="text-center">
+                        <div class="mb-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="bi text-body-secondary flex-shrink-0 me-3"
+                            width="1.75em"
+                            height="1.75em"
+                          >
+                            <path
+                              d="M240.8 4.8C250.3 10.6 256 20.9 256 32v72h89c3.6-13.8 16.1-24 31-24h88c26.5 0 48 21.5 48 48s-21.5 48-48 48H376c-14.9 0-27.4-10.2-31-24H256v72c0 11.1-5.7 21.4-15.2 27.2s-21.2 6.4-31.1 1.4l-192-96C6.8 151.2 0 140.1 0 128s6.8-23.2 17.7-28.6l192-96c9.9-5 21.7-4.4 31.1 1.4zM288 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H320c-17.7 0-32-14.3-32-32V256zM32 384h96c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32zm192 0H480c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32z"
+                            />
+                          </svg>
+                        </div>
+                        <div class="">
+                          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                            Masonry
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card shadow card-bottom h-100">
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center"
+                    >
+                      <div class="text-center">
+                        <div class="mb-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="bi text-body-secondary flex-shrink-0 me-3"
+                            width="1.75em"
+                            height="1.75em"
+                            viewBox="0 0 576 512"
+                          >
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                              d="M0 112.5V422.3c0 18 10.1 35 27 41.3c87 32.5 174 10.3 261-11.9c79.8-20.3 159.6-40.7 239.3-18.9c23 6.3 48.7-9.5 48.7-33.4V89.7c0-18-10.1-35-27-41.3C462 15.9 375 38.1 288 60.3C208.2 80.6 128.4 100.9 48.7 79.1C25.6 72.8 0 88.6 0 112.5zM288 352c-44.2 0-80-43-80-96s35.8-96 80-96s80 43 80 96s-35.8 96-80 96zM64 352c35.3 0 64 28.7 64 64H64V352zm64-208c0 35.3-28.7 64-64 64V144h64zM512 304v64H448c0-35.3 28.7-64 64-64zM448 96h64v64c-35.3 0-64-28.7-64-64z"
+                            />
+                          </svg>
+                        </div>
+                        <div class="">
+                          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                            Truck and Trailer Repair
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card shadow card-bottom h-100">
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center"
+                    >
+                      <div class="text-center">
+                        <div class="mb-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="bi text-body-secondary flex-shrink-0 me-3"
+                            width="1.75em"
+                            height="1.75em"
+                            viewBox="0 0 576 512"
+                          >
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                              d="M0 112.5V422.3c0 18 10.1 35 27 41.3c87 32.5 174 10.3 261-11.9c79.8-20.3 159.6-40.7 239.3-18.9c23 6.3 48.7-9.5 48.7-33.4V89.7c0-18-10.1-35-27-41.3C462 15.9 375 38.1 288 60.3C208.2 80.6 128.4 100.9 48.7 79.1C25.6 72.8 0 88.6 0 112.5zM288 352c-44.2 0-80-43-80-96s35.8-96 80-96s80 43 80 96s-35.8 96-80 96zM64 352c35.3 0 64 28.7 64 64H64V352zm64-208c0 35.3-28.7 64-64 64V144h64zM512 304v64H448c0-35.3 28.7-64 64-64zM448 96h64v64c-35.3 0-64-28.7-64-64z"
+                            />
+                          </svg>
+                        </div>
+                        <div class="">
+                          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                            Free Estimates
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <section id="portfolio">
+        <div
+          class="container-fluid col-xl-10 col-xxl-8 px-4 py-5"
+          id="custom-cards"
+        >
+          <h1
+            style="
+              border-left: 4px solid var(--accent-color);
+              padding-left: 15px;
+            "
+            class="pb-2"
+          >
+            Portfolio
+          </h1>
+          <div
+            class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
+          >
+            <div
+              class="col"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal1"
+              style="cursor: pointer"
+            >
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="
+                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/SdvzcWb4vKL0DzfFYup0Fw/o.jpg');
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div
+                  style="height: 400px; width: auto"
+                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                >
+                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                        Another longer title belongs here
+                     </h3> -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal1"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body mx-auto">
+                    <img
+                      style="width: 100%; height: auto; display: block"
+                      src="https://s3-media0.fl.yelpcdn.com/bphoto/SdvzcWb4vKL0DzfFYup0Fw/o.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2"
+              style="cursor: pointer"
+            >
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="
+                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/KHV07ZxTZg2ZIdCVZUTlkA/o.jpg');
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div
+                  style="height: 400px; width: auto"
+                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                >
+                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                        Another longer title belongs here
+                     </h3> -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal2"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body mx-auto">
+                    <img
+                      style="width: 100%; height: auto; display: block"
+                      src="https://s3-media0.fl.yelpcdn.com/bphoto/KHV07ZxTZg2ZIdCVZUTlkA/o.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal3"
+              style="cursor: pointer"
+            >
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="
+                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/4pp5mdB7nVLPqKPXducCjA/o.jpg');
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div
+                  style="height: 400px; width: auto"
+                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                >
+                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                        Another longer title belongs here
+                     </h3> -->
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="exampleModal3"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body mx-auto">
+                    <img
+                      style="width: 100%; height: auto; display: block"
+                      src="https://s3-media0.fl.yelpcdn.com/bphoto/4pp5mdB7nVLPqKPXducCjA/o.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal4"
+              style="cursor: pointer"
+            >
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="
+                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/NtEOuD8AE4QL6saQGqx-eQ/o.jpg');
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div
+                  style="height: 400px; width: auto"
+                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                >
+                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                        Another longer title belongs here
+                     </h3> -->
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="exampleModal4"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body mx-auto">
+                    <img
+                      style="width: 100%; height: auto; display: block"
+                      src="https://s3-media0.fl.yelpcdn.com/bphoto/NtEOuD8AE4QL6saQGqx-eQ/o.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal5"
+              style="cursor: pointer"
+            >
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="
+                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/qzRIdysJMjSIQ0xXVs1PKQ/o.jpg');
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div
+                  style="height: 400px; width: auto"
+                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                >
+                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                        Another longer title belongs here
+                     </h3> -->
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="exampleModal5"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body mx-auto">
+                    <img
+                      style="width: 100%; height: auto; display: block"
+                      src="https://s3-media0.fl.yelpcdn.com/bphoto/qzRIdysJMjSIQ0xXVs1PKQ/o.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal6"
+              style="cursor: pointer"
+            >
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="
+                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/oMq9pO9FbDbBF55woh_Arg/o.jpg');
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div
+                  style="height: 400px; width: auto"
+                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                >
+                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                        Another longer title belongs here
+                     </h3> -->
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="exampleModal6"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body mx-auto">
+                    <img
+                      style="width: 100%; height: auto; display: block"
+                      src="https://s3-media0.fl.yelpcdn.com/bphoto/oMq9pO9FbDbBF55woh_Arg/o.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="reviews">
+        <div
+          class="container-fluid col-xl-10 col-xxl-8 px-4 py-5"
+          id="hanging-icons"
+        >
+          <h1
+            style="
+              border-left: 4px solid var(--accent-color);
+              padding-left: 15px;
+            "
+            class="pb-2"
+          >
+            Reviews
+          </h1>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <!-- <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+          >
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#toggles2"></use>
+            </svg>
+          </div> -->
+              <div class="card shadow card-bottom">
+                <div class="card-body">
+                  <h3 class="fs-2 text-body-emphasis">⭐⭐⭐⭐⭐</h3>
+
+                  <p>
+                    5 stars for Carlos at CNB Welding! I needed a new railing
+                    after I took my flex wall down and I wanted it to match my
+                    other railings and the spiral staircase. It was difficult to
+                    find a metalworker in general to do this custom railing and
+                    even harder because it's a small job. However, Carlos was
+                    excellent. He responded right away and was able to come to
+                    my apartment and provide an estimate a few days later. The
+                    cost of the project was very well-priced. He was able to get
+                    the custom railing done in less than 2 weeks! And installed
+                    right after. It matched our original railing perfectly.
+                    Carlos was quick, responsive, and professional. Highly
+                    recommend for jobs big or small!
+                  </p>
+                  <small>- Catherine K.</small>
+                  <!-- <a href="#" class="btn btn-primary"> Primary button </a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-start">
+              <!-- <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+          >
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#cpu-fill"></use>
+            </svg>
+          </div> -->
+              <div class="card shadow card-bottom">
+                <div class="card-body">
+                  <h3 class="fs-2 text-body-emphasis">⭐⭐⭐⭐⭐</h3>
+                  <p>
+                    I was contacted by Carlos from CNB Welding in regard to a
+                    48"mower deck that had some damage done to it by me trying
+                    to fix a small crack that I turned into big hole after I
+                    attempted to weld it myself which turned into a big mistake.
+                    Carlos contacted me and then came over a couple of days
+                    later and looked at my destruction of the mower deck and
+                    stated that he can fix it and reinforce it with no problem.
+                    He gave me a price that was very reasonable compared to a
+                    few others that I was quoted to repair the mower deck. He
+                    put the 48" mower deck in the back of his pickup and stated
+                    that he could drop it back off to me in a couple of days
+                    which was great. This was around 9:30am on a Sunday. At
+                    about 3:30 pm the same day I get a call and it was Carlos
+                    and he stated that he has completed the work and wanted to
+                    know if he could drop the mower deck back off to me. I was
+                    surprised and said sure. I was very pleased with the quality
+                    and speed that Carlos provided, and he turned it around
+                    super-fast and at a great price. I will definitely be using
+                    Carlos - CNB Welding for any future welding repairs that I
+                    come across needing and would recommend Carlos @ CNB Welding
+                    to anyone in a heartbeat. I have attached four Before photos
+                    of the damage that I did trying to fix the mower deck and
+                    then four more After photos of the repairs that Carlos
+                    provided me.
+                  </p>
+                  <small>- Edward F.</small>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="card shadow card-bottom">
+                <div class="card-body">
+                  <h3 class="fs-2 text-body-emphasis">⭐⭐⭐⭐⭐</h3>
+                  <p>
+                    I had major frame rust in my 2001 ford mustang. It was
+                    getting bad and I had a massive hole in my frame. I reached
+                    out to Carlos for an estimate and heard back almost
+                    immediately. He removed all the rust and welded in a new
+                    stronger piece of sheet metal. It came out amazing and the
+                    frame is now stronger than factory. Would definitely
+                    recommend him to anyone needing welding. 10 out of 10 work.
+                  </p>
+                  <small>- Matthew P.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="contact">
+        <div class="container-fluid col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="row gy-3 g-lg-5 py-5">
+            <div class="col-lg-4 text-center text-lg-start">
+              <h1
+                style="
+                  border-left: 4px solid var(--accent-color);
+                  padding-left: 15px;
+                "
+                class="display-4 fw-bold lh-1 mb-3"
+              >
+                Contact Us
+              </h1>
+              <p class="col-lg-10 fs-4">
+                If you have any questions or would like to request an estimate,
+                feel free to give us a call or send a message via the form
+                <i class="fa-solid fa-hand-point-right"></i>
+              </p>
+              <br />
+              <a
+                class="text-black"
+                style="text-decoration: none"
+                href="tel:16319125135"
+              >
+                <div class="card shadow card-bottom">
+                  <div class="card-body">
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col-md-2">
+                        <svg
+                          class="bi text-body-secondary flex-shrink-0 me-3"
+                          width="1.75em"
+                          height="1.75em"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="col-md-10">
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                          (631) 912-5135
+                        </h3>
+                        <small>Click to Call!</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-8">
+              <form
+                class="p-4 p-md-5 shadow border rounded-3 bg-body-tertiary"
+                action="https://getform.io/f/zbzkloga"
+                method="POST"
+                data-form-type="contact"
+              >
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    name="email"
+                    placeholder="name@example.com"
+                    data-dashlane-rid="31d497bc46bd990c"
+                    data-form-type="email"
+                    data-kwimpalastatus="alive"
+                    data-kwimpalaid="1711164646505-0"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingName"
+                    name="name"
+                    placeholder="Full Name"
+                  />
+                  <label for="floatingName">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="tel"
+                    name="phone"
+                    class="form-control"
+                    id="floatingPhone"
+                    placeholder="Phone"
+                  />
+                  <label for="floatingPhone">Phone</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    id="message"
+                    style="height: 200px"
+                  ></textarea>
+                  <label for="xmessage">Message</label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">
+                  Send Message
+                </button>
+                <hr class="my-4" />
+                <small class="text-body-secondary"
+                  >We will reach out within 24 hours.</small
+                >
+                <input
+                  type="hidden"
+                  name="_gotcha"
+                  style="display: none !important"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-fluid col-xl-10 col-xxl-8 px-4 py-5">
+      <footer
+        class="row gy-4 d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4">
+          <ul class="nav list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                style="
+                  background-color: #ff1a1a;
+                  height: 60px;
+                  width: 60px;
+                  padding: 10px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-decoration: none;
+                "
+                target="_blank"
+                class="text-body-secondary"
+                href="https://www.yelp.com/biz/cnb-welding-and-masonry-south-huntington"
+              >
+                <i
+                  style="font-size: 30px; color: white"
+                  class="fa-brands fa-yelp"
+                ></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                style="
+                  background-color: #3b5998;
+                  height: 60px;
+                  width: 60px;
+                  padding: 10px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-decoration: none;
+                "
+                target="_blank"
+                href="https://www.facebook.com/Hercarlos76/"
+              >
+                <i
+                  style="font-size: 30px; color: white"
+                  class="fa-brands fa-facebook"
+                ></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                style="
+                  background-color: #e4405f;
+                  height: 60px;
+                  width: 60px;
+                  padding: 10px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-decoration: none;
+                "
+                href="#"
+                ><i
+                  style="font-size: 30px; color: white"
+                  class="fa-brands fa-instagram"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="col-md-4 mb-0 text-center text-body-secondary">
+          © 2024 CNB Welding
+        </p>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link px-2 text-body-secondary"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link px-2 text-body-secondary"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link px-2 text-body-secondary"
+              >Reviews</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link px-2 text-body-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
