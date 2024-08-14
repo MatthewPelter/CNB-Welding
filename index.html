@@ -53,9 +53,9 @@
         z-index: 10;
       }
       /* Declare heights because of positioning of img element */
-      .carousel-item {
+      /* .carousel-item {
         height: 42rem;
-      }
+      } */
       /* MARKETING CONTENT
          -------------------------------------------------- */
       /* Center align the text within the three columns below the carousel */
@@ -162,6 +162,13 @@
         --bs-btn-disabled-bg: var(--accent-color-hover) !important;
         --bs-btn-disabled-border-color: var(--accent-color-hover) !important;
       }
+
+      .carousel-indicators [data-bs-target] {
+        background-color: black;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+      }
     </style>
   </head>
   <body>
@@ -174,7 +181,7 @@
     >
       <nav
         id="navbar-example2"
-        class="navbar navbar-expand-md shadow navbar-dark fixed-top py-4"
+        class="navbar navbar-expand-md shadow fixed-top py-4"
         style="border-bottom: 4px solid var(--accent-color)"
       >
         <div class="container-fluid col-xl-10 col-xxl-8">
@@ -224,10 +231,10 @@
           <div class="col-md-6 pt-5" style="z-index: 99">
             <h1 class="display-4 fw-bold text-white">CNB Welding</h1>
             <p class="lead text-white text-center mb-4">
-              Quickly design and customize responsive mobile-first sites with
-              Bootstrap, the world's most popular front-end open source toolkit,
-              featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.
+              Ready to bring your project to life? At CNB Welding, we specialize
+              in precision welding that meets your exact specifications. Whether
+              it's a small repair or a large-scale fabrication, our skilled team
+              is here to deliver top-quality results.
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
               <a
@@ -269,10 +276,7 @@
               </h1>
               <p class="lead">
                 CNB Welding is family owned with more than 20 years of
-                experience. Services : Railing, Driveways, Patios, Gates,
-                Fences, Masonry, Waterfalls, Fish Ponds, Retaining Walls, Truck
-                and Trailer Repair and Much more. Aluminum and stainless steel
-                welding.
+                experience.
               </p>
               <br />
               <div class="row">
@@ -321,14 +325,14 @@
                 Services
               </h1>
               <p class="lead">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world's most popular front-end open source
-                toolkit, featuring Sass variables and mixins, responsive grid
-                system, extensive prebuilt components, and powerful JavaScript
-                plugins. Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Ea quis quidem maxime, expedita recusandae et ipsam
-                aliquid, dolorum vero autem sequi fugit doloremque architecto
-                officiis, facilis perspiciatis adipisci deserunt quibusdam.
+                At CNB Welding & Masonry, we offer a variety of welding and
+                construction services to meet your needs. Here are most of our
+                services we have to offer!
+
+                <br /><b>Services</b> : Railing, Driveways, Patios, Gates,
+                Fences, Masonry, Waterfalls, Fish Ponds, Retaining Walls, Truck
+                and Trailer Repair, Aluminum and stainless steel welding and
+                Much more.
               </p>
             </div>
             <div class="col-md-6">
@@ -448,14 +452,14 @@
                         <div class="mb-1">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 512"
                             class="bi text-body-secondary flex-shrink-0 me-3"
                             width="1.75em"
                             height="1.75em"
-                            viewBox="0 0 576 512"
                           >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
-                              d="M0 112.5V422.3c0 18 10.1 35 27 41.3c87 32.5 174 10.3 261-11.9c79.8-20.3 159.6-40.7 239.3-18.9c23 6.3 48.7-9.5 48.7-33.4V89.7c0-18-10.1-35-27-41.3C462 15.9 375 38.1 288 60.3C208.2 80.6 128.4 100.9 48.7 79.1C25.6 72.8 0 88.6 0 112.5zM288 352c-44.2 0-80-43-80-96s35.8-96 80-96s80 43 80 96s-35.8 96-80 96zM64 352c35.3 0 64 28.7 64 64H64V352zm64-208c0 35.3-28.7 64-64 64V144h64zM512 304v64H448c0-35.3 28.7-64 64-64zM448 96h64v64c-35.3 0-64-28.7-64-64z"
+                              d="M48 32C21.5 32 0 53.5 0 80L0 336c0 26.5 21.5 48 48 48l17.1 0c7.8-54.3 54.4-96 110.9-96s103.1 41.7 110.9 96L488 384l8 0 112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-240c0-26.5-21.5-48-48-48L48 32zM80 96c8.8 0 16 7.2 16 16l0 131.2c-11.4 5.9-22.2 12.9-32 21L64 112c0-8.8 7.2-16 16-16zm96 128c-5.4 0-10.7 .2-16 .7L160 112c0-8.8 7.2-16 16-16s16 7.2 16 16l0 112.7c-5.3-.5-10.6-.7-16-.7zm80 19.2L256 112c0-8.8 7.2-16 16-16s16 7.2 16 16l0 152.2c-9.8-8.1-20.6-15.2-32-21zM368 96c8.8 0 16 7.2 16 16l0 192c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-192c0-8.8 7.2-16 16-16zm112 16l0 192c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-192c0-8.8 7.2-16 16-16s16 7.2 16 16zM176 480a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-112a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
                             />
                           </svg>
                         </div>
@@ -485,7 +489,6 @@
                             height="1.75em"
                             viewBox="0 0 576 512"
                           >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
                               d="M0 112.5V422.3c0 18 10.1 35 27 41.3c87 32.5 174 10.3 261-11.9c79.8-20.3 159.6-40.7 239.3-18.9c23 6.3 48.7-9.5 48.7-33.4V89.7c0-18-10.1-35-27-41.3C462 15.9 375 38.1 288 60.3C208.2 80.6 128.4 100.9 48.7 79.1C25.6 72.8 0 88.6 0 112.5zM288 352c-44.2 0-80-43-80-96s35.8-96 80-96s80 43 80 96s-35.8 96-80 96zM64 352c35.3 0 64 28.7 64 64H64V352zm64-208c0 35.3-28.7 64-64 64V144h64zM512 304v64H448c0-35.3 28.7-64 64-64zM448 96h64v64c-35.3 0-64-28.7-64-64z"
                             />
@@ -507,11 +510,9 @@
       </section>
 
       <hr />
-      <section id="portfolio">
-        <div
-          class="container-fluid col-xl-10 col-xxl-8 px-4 py-5"
-          id="custom-cards"
-        >
+
+      <section>
+        <div class="container-fluid col-xl-10 col-xxl-8 px-4 py-5">
           <h1
             style="
               border-left: 4px solid var(--accent-color);
@@ -522,329 +523,638 @@
             Portfolio
           </h1>
           <div
-            class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-touch="true"
           >
-            <div
-              class="col"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal1"
-              style="cursor: pointer"
-            >
-              <div
-                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="
-                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/SdvzcWb4vKL0DzfFYup0Fw/o.jpg');
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                "
-              >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <div
-                  style="height: 400px; width: auto"
-                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                  class="row row-cols-1 h-100 row-cols-lg-3 align-items-stretch g-4 py-5"
                 >
-                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                        Another longer title belongs here
-                     </h3> -->
-                </div>
-              </div>
-            </div>
-            <div
-              class="modal fade"
-              id="exampleModal1"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                  <div class="modal-body mx-auto">
-                    <img
-                      style="width: 100%; height: auto; display: block"
-                      src="https://s3-media0.fl.yelpcdn.com/bphoto/SdvzcWb4vKL0DzfFYup0Fw/o.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal1"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_1.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
                     >
-                      Close
-                    </button>
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="exampleModal1"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_1.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_2.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="exampleModal2"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_2.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal3"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_3.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal fade"
+                    id="exampleModal3"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_3.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal4"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_4.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal fade"
+                    id="exampleModal4"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_4.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal5"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_5.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal fade"
+                    id="exampleModal5"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_5.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal6"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_6.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal fade"
+                    id="exampleModal6"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_6.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="col"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal2"
-              style="cursor: pointer"
-            >
-              <div
-                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="
-                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/KHV07ZxTZg2ZIdCVZUTlkA/o.jpg');
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                "
-              >
+              <div class="carousel-item">
                 <div
-                  style="height: 400px; width: auto"
-                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                  class="row row-cols-1 h-100 row-cols-lg-3 align-items-stretch g-4 py-5"
                 >
-                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                        Another longer title belongs here
-                     </h3> -->
-                </div>
-              </div>
-            </div>
-            <div
-              class="modal fade"
-              id="exampleModal2"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                  <div class="modal-body mx-auto">
-                    <img
-                      style="width: 100%; height: auto; display: block"
-                      src="https://s3-media0.fl.yelpcdn.com/bphoto/KHV07ZxTZg2ZIdCVZUTlkA/o.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal1"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_1.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
                     >
-                      Close
-                    </button>
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal3"
-              style="cursor: pointer"
-            >
-              <div
-                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="
-                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/4pp5mdB7nVLPqKPXducCjA/o.jpg');
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                "
-              >
-                <div
-                  style="height: 400px; width: auto"
-                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                >
-                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                        Another longer title belongs here
-                     </h3> -->
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="modal fade"
-              id="exampleModal3"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                  <div class="modal-body mx-auto">
-                    <img
-                      style="width: 100%; height: auto; display: block"
-                      src="https://s3-media0.fl.yelpcdn.com/bphoto/4pp5mdB7nVLPqKPXducCjA/o.jpg"
-                      alt=""
-                    />
+                  <div
+                    class="modal fade"
+                    id="exampleModal1"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_1.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_2.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
                     >
-                      Close
-                    </button>
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal4"
-              style="cursor: pointer"
-            >
-              <div
-                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="
-                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/NtEOuD8AE4QL6saQGqx-eQ/o.jpg');
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                "
-              >
-                <div
-                  style="height: 400px; width: auto"
-                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                >
-                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                        Another longer title belongs here
-                     </h3> -->
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="modal fade"
-              id="exampleModal4"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                  <div class="modal-body mx-auto">
-                    <img
-                      style="width: 100%; height: auto; display: block"
-                      src="https://s3-media0.fl.yelpcdn.com/bphoto/NtEOuD8AE4QL6saQGqx-eQ/o.jpg"
-                      alt=""
-                    />
+                  <div
+                    class="modal fade"
+                    id="exampleModal2"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_2.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal3"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_3.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
                     >
-                      Close
-                    </button>
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
 
-            <div
-              class="col"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal5"
-              style="cursor: pointer"
-            >
-              <div
-                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="
-                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/qzRIdysJMjSIQ0xXVs1PKQ/o.jpg');
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                "
-              >
-                <div
-                  style="height: 400px; width: auto"
-                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                >
-                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                        Another longer title belongs here
-                     </h3> -->
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="modal fade"
-              id="exampleModal5"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                  <div class="modal-body mx-auto">
-                    <img
-                      style="width: 100%; height: auto; display: block"
-                      src="https://s3-media0.fl.yelpcdn.com/bphoto/qzRIdysJMjSIQ0xXVs1PKQ/o.jpg"
-                      alt=""
-                    />
+                  <div
+                    class="modal fade"
+                    id="exampleModal3"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_3.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
+
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal4"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_4.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
                     >
-                      Close
-                    </button>
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
 
-            <div
-              class="col"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal6"
-              style="cursor: pointer"
-            >
-              <div
-                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="
-                  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/oMq9pO9FbDbBF55woh_Arg/o.jpg');
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                "
-              >
-                <div
-                  style="height: 400px; width: auto"
-                  class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                >
-                  <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                        Another longer title belongs here
-                     </h3> -->
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="modal fade"
-              id="exampleModal6"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                  <div class="modal-body mx-auto">
-                    <img
-                      style="width: 100%; height: auto; display: block"
-                      src="https://s3-media0.fl.yelpcdn.com/bphoto/oMq9pO9FbDbBF55woh_Arg/o.jpg"
-                      alt=""
-                    />
+                  <div
+                    class="modal fade"
+                    id="exampleModal4"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_4.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
+
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal5"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_5.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
                     >
-                      Close
-                    </button>
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal fade"
+                    id="exampleModal5"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_5.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal6"
+                    style="cursor: pointer"
+                  >
+                    <div
+                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                      style="
+                        background-image: url('./images/img_6.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      <div
+                        style="height: 400px; width: auto"
+                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal fade"
+                    id="exampleModal6"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body mx-auto">
+                          <img
+                            style="width: 100%; height: auto; display: block"
+                            src="./images/img_6.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -852,6 +1162,7 @@
           </div>
         </div>
       </section>
+
       <hr />
       <section id="reviews">
         <div
