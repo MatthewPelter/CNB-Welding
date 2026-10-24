@@ -1,1510 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CNB Welding</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <style>
-      /* GLOBAL STYLES
-         -------------------------------------------------- */
-      /* Padding below the footer and lighter body text */
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#152024">
+  <meta name="description" content="CNB Welding & Masonry provides custom welding, metal fabrication, railings, gates, masonry, and truck and trailer repairs in South Huntington and across Long Island. Free estimates. Call (631) 912-5135.">
+  <meta name="author" content="CNB Welding & Masonry">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CNB Welding & Masonry">
+  <meta property="og:title" content="CNB Welding & Masonry | Welding & Fabrication on Long Island">
+  <meta property="og:description" content="Family-owned craftsmanship, custom welding and masonry, and repairs built to last. Serving Long Island. Request a free estimate.">
+  <meta name="twitter:card" content="summary">
+  <!-- Add an absolute canonical URL and og:url/og:image after confirming your live domain. See README.md. -->
+  <title>CNB Welding & Masonry | Custom Welding & Fabrication on Long Island</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "CNB Welding & Masonry",
+    "description": "Family-owned custom welding, metal fabrication, masonry, and repair services with more than 20 years of experience.",
+    "telephone": "+1-631-912-5135",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "South Huntington",
+      "addressRegion": "NY",
+      "postalCode": "11746",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Long Island, New York"
+    },
+    "sameAs": [
+      "https://www.yelp.com/biz/cnb-welding-and-masonry-south-huntington",
+      "https://www.facebook.com/Hercarlos76/"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Welding and masonry services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom railings, gates and fences"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Aluminum and stainless steel welding"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Truck and trailer welding repair"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Masonry, patios, driveways and retaining walls"}}
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-      :root {
-        --main-color: #fcffff;
-        --accent-color: #dc143c;
-        --accent-color-hover: #b30e2f;
-        --bg-color: #3a4145;
-      }
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <p><span class="utility-dot" aria-hidden="true"></span> Family-owned craftsmanship on Long Island <span class="utility-separator">/</span> <span class="utility-location">South Huntington, New York</span></p>
+      <a href="tel:+16319125135" aria-label="Call CNB Welding at 631 912 5135">Call us <span>(631) 912-5135</span> <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
 
-      body {
-        padding-top: 90px !important;
-        padding-bottom: 3rem;
-        font-family: "Roboto Slab", serif;
-        /* color: rgb(var(--bs-tertiary-color-rgb)); */
-      }
-      /* CUSTOMIZE THE CAROUSEL
-         -------------------------------------------------- */
-      /* Carousel base class */
-      .carousel {
-        margin-bottom: 4rem;
-      }
-      /* Since positioning the image, we need to help out the caption */
-      .carousel-caption {
-        bottom: 3rem;
-        z-index: 10;
-      }
-      /* Declare heights because of positioning of img element */
-      /* .carousel-item {
-        height: 42rem;
-      } */
-      /* MARKETING CONTENT
-         -------------------------------------------------- */
-      /* Center align the text within the three columns below the carousel */
-      .marketing .col-lg-4 {
-        margin-bottom: 1.5rem;
-        text-align: center;
-      }
-      /* rtl:begin:ignore */
-      .marketing .col-lg-4 p {
-        margin-right: 0.75rem;
-        margin-left: 0.75rem;
-      }
-      /* rtl:end:ignore */
-      /* Featurettes
-         ------------------------- */
-      .featurette-divider {
-        margin: 5rem 0; /* Space out the Bootstrap 
-         <hr>
-         more */
-      }
-      /* Thin out the marketing headings */
-      /* rtl:begin:remove */
-      .featurette-heading {
-        letter-spacing: -0.05rem;
-      }
-      /* rtl:end:remove */
-      /* RESPONSIVE CSS
-         -------------------------------------------------- */
-      @media (min-width: 40em) {
-        /* Bump up size of carousel content */
-        .carousel-caption p {
-          margin-bottom: 1.25rem;
-          font-size: 1.25rem;
-          line-height: 1.4;
-        }
-        .featurette-heading {
-          font-size: 50px;
-        }
-      }
-      @media (min-width: 62em) {
-        .featurette-heading {
-          margin-top: 7rem;
-        }
-      }
-
-      body {
-        background-color: #fcffff;
-        color: var(--bg-color) !important;
-      }
-      .card-bottom {
-        border-bottom: 4px solid var(--accent-color);
-      }
-      .navbar {
-        background-color: #fcffff;
-        color: var(--bg-color);
-      }
-
-      .navbar a {
-        color: var(--bg-color) !important;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4 {
-        color: var(--bg-color) !important;
-      }
-
-      #welcome-hero {
-        background-image: url("./images/hero-background.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 50vh;
-        width: auto;
-        position: relative;
-      }
-
-      #welcome-hero::before {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      .navbar .active {
-        background-color: var(--accent-color) !important;
-        color: var(--main-color) !important;
-      }
-      .btn-primary {
-        --bs-btn-bg: var(--accent-color) !important;
-        --bs-btn-border-color: var(--accent-color) !important;
-        --bs-btn-hover-color: #fff;
-        --bs-btn-hover-bg: var(--accent-color-hover) !important;
-        --bs-btn-hover-border-color: var(--accent-color-hover) !important;
-        --bs-btn-focus-shadow-rgb: 49, 132, 253;
-        --bs-btn-active-color: #fff;
-        --bs-btn-active-bg: var(--accent-color) !important;
-        --bs-btn-active-border-color: var(--accent-color) !important;
-        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-        --bs-btn-disabled-color: #fff;
-        --bs-btn-disabled-bg: var(--accent-color-hover) !important;
-        --bs-btn-disabled-border-color: var(--accent-color-hover) !important;
-      }
-
-      .carousel-indicators [data-bs-target] {
-        background-color: black;
-        width: 10px;
-        height: 10px;
-        border-radius: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div
-      data-bs-spy="scroll"
-      data-bs-target="#navbar-example2"
-      data-bs-offset="0"
-      class="scrollspy-example"
-      tabindex="0"
-    >
-      <nav
-        id="navbar-example2"
-        class="navbar navbar-expand-md shadow fixed-top py-4"
-        style="border-bottom: 4px solid var(--accent-color)"
-      >
-        <div class="container-fluid col-xl-10 col-xxl-8">
-          <a class="navbar-brand" href="#home">CNB Welding</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav nav-pills ms-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#reviews">Reviews</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="CNB Welding & Masonry, home">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M7 33 30 10h12L18 34H7Z" fill="currentColor"/><path d="m28 29 13-13v9L28 38H18l10-9Z" fill="currentColor"/><path d="M7 12h8L7 20v-8Z" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-words"><strong>CNB <span>WELDING</span></strong><small>FABRICATION &amp; MASONRY</small></span>
+      </a>
+      <button class="menu-toggle" type="button" id="menu-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#about">About Us</a>
+        <a href="#reviews">Reviews</a>
+        <a class="nav-cta" href="#contact">Get a Free Estimate <span aria-hidden="true">↗</span></a>
       </nav>
-      <section id="home">
-        <div
-          id="welcome-hero"
-          class="px-4 text-center border-bottom d-flex flex-column justify-content-center align-items-center"
-        >
-          <div class="col-md-6 pt-5" style="z-index: 99">
-            <h1 class="display-4 fw-bold text-white">CNB Welding</h1>
-            <p class="lead text-white text-center mb-4">
-              Ready to bring your project to life? At CNB Welding, we specialize
-              in precision welding that meets your exact specifications. Whether
-              it's a small repair or a large-scale fabrication, our skilled team
-              is here to deliver top-quality results.
-            </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-              <a
-                href="#about"
-                class="btn btn-primary shadow btn-lg px-4 me-sm-3"
-              >
-                Learn More
-              </a>
-              <a href="#contact" class="btn btn-secondary shadow btn-lg px-4">
-                Contact Us
-              </a>
-            </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="line"></span> WELDING &amp; MASONRY · LONG ISLAND, NY</p>
+          <h1 id="hero-heading">BUILT <em>STRONG.</em><br>MADE TO <span>LAST.</span></h1>
+          <p class="hero-summary">From custom metalwork to everyday repairs, we bring experience, attention to detail, and pride in the work to every project.</p>
+          <div class="hero-actions">
+            <a class="button button-accent" href="#contact">Request a Free Estimate <span class="button-arrow" aria-hidden="true">↗</span></a>
+            <a class="text-link light-link" href="#work">Explore Our Work <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-proof" aria-label="Why choose CNB Welding">
+            <div><strong>20<span>+</span></strong><span>Years of<br>experience</span></div>
+            <div><strong>FREE</strong><span>Project<br>estimates</span></div>
+            <div><span class="hero-proof-icon" aria-hidden="true">✦</span><span>Family-owned<br>&amp; operated</span></div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1738162837389-3b02d6dd507b?auto=format&amp;fit=crop&amp;w=1500&amp;q=82" alt="Welder working with bright sparks in a metalworking shop" width="1500" height="1800" fetchpriority="high" data-fallback="assets/fallback-welding.svg">
+        <div class="hero-visual-gradient" aria-hidden="true"></div>
+        <div class="hero-photo-label"><span class="label-rule"></span> THE RIGHT WORK. DONE RIGHT.</div>
+        <div class="hero-corner" aria-hidden="true"><span>01</span><small>CRAFTSMANSHIP<br>THAT COUNTS</small></div>
+      </div>
+      <div class="hero-side-text" aria-hidden="true">METALWORK · FABRICATION · REPAIRS</div>
+    </section>
 
-      <section id="about">
-        <div class="container-fluid col-xl-10 col-xxl-8 px-4 py-5">
-          <div class="row align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-              <img
-                src="https://s3-media0.fl.yelpcdn.com/bphoto/xmQOwWU7deU1CKDKicoYJw/o.jpg"
-                class="d-block mx-lg-auto img-fluid"
-                alt="Bootstrap Themes"
-                width="700"
-                height="500"
-                loading="lazy"
-              />
-            </div>
-            <div class="col-lg-6">
-              <h1
-                style="
-                  border-left: 4px solid var(--accent-color);
-                  padding-left: 15px;
-                "
-                class="display-5 fw-bold lh-1 mb-3"
-              >
-                Who are we?
-              </h1>
-              <p class="lead">
-                CNB Welding is family owned with more than 20 years of
-                experience.
-              </p>
-              <br />
-              <div class="row">
-                <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg> -->
-                <div class="card shadow card-bottom">
-                  <div class="card-body">
-                    <div class="row align-items-center py-3">
-                      <div class="col-md-2">
-                        <svg
-                          class="bi text-body-secondary flex-shrink-0 me-3"
-                          width="3em"
-                          height="3em"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 640 512"
-                        >
-                          <path
-                            d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
-                          />
-                        </svg>
-                      </div>
-                      <div class="col-md-10">
-                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                          ¡Hablamos Español!
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr />
-      <section id="services">
-        <div class="container-fluid col-xxl-8 px-4 py-5">
-          <div class="row g-5 py-5">
-            <div class="col-md-6">
-              <h1
-                style="
-                  border-left: 4px solid var(--accent-color);
-                  padding-left: 15px;
-                "
-                class="display-5 fw-bold lh-1 mb-3"
-              >
-                Services
-              </h1>
-              <p class="lead">
-                At CNB Welding & Masonry, we offer a variety of welding and
-                construction services to meet your needs. Here are most of our
-                services we have to offer!
-
-                <br /><b>Services</b> : Railing, Driveways, Patios, Gates,
-                Fences, Masonry, Waterfalls, Fish Ponds, Retaining Walls, Truck
-                and Trailer Repair, Aluminum and stainless steel welding and
-                Much more.
-              </p>
-            </div>
-            <div class="col-md-6">
-              <!-- <img src="https://s3-media0.fl.yelpcdn.com/bphoto/4pp5mdB7nVLPqKPXducCjA/o.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
-              <div class="row gy-4">
-                <div class="col-md-6 col-sm-6">
-                  <div class="card shadow card-bottom h-100">
-                    <div
-                      class="card-body d-flex justify-content-center align-items-center"
-                    >
-                      <div class="text-center">
-                        <div class="mb-1">
-                          <svg
-                            version="1.1"
-                            id="Uploaded to svgrepo.com"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            class="bi text-body-secondary flex-shrink-0 me-3"
-                            width="1.75em"
-                            height="1.75em"
-                            viewBox="0 0 32 32"
-                            xml:space="preserve"
-                          >
-                            <path
-                              class="stone_een"
-                              d="M5,15H4c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h1V15z M21,11H11v3h10V11z M23,10v5
-                                    c0,0.551-0.449,1-1,1H10c-0.551,0-1-0.449-1-1v-5c0-0.551,0.449-1,1-1h12C22.551,9,23,9.449,23,10z M22,10H10v5h12V10z M26,18.02
-                                    c0,1.317-0.13,2.631-0.388,3.922l-1.129,5.646C24.202,28.991,22.971,30,21.541,30H10.459c-1.43,0-2.661-1.009-2.942-2.412
-                                    l-1.129-5.646C6.13,20.65,6,19.337,6,18.02V7c0-2.761,2.239-5,5-5h10c2.761,0,5,2.239,5,5V18.02z M24,10c0-1.103-0.897-2-2-2H10
-                                    c-1.103,0-2,0.897-2,2v5c0,1.103,0.897,2,2,2h12c1.103,0,2-0.897,2-2V10z M28,10h-1v5h1c0.552,0,1-0.448,1-1v-3
-                                    C29,10.448,28.552,10,28,10z"
-                            />
-                          </svg>
-                        </div>
-                        <div class="">
-                          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                            Aluminum Welding
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="card shadow card-bottom h-100">
-                    <div
-                      class="card-body d-flex justify-content-center align-items-center"
-                    >
-                      <div class="text-center">
-                        <div class="mb-1">
-                          <svg
-                            version="1.1"
-                            id="Uploaded to svgrepo.com"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            class="bi text-body-secondary flex-shrink-0 me-3"
-                            width="1.75em"
-                            height="1.75em"
-                            viewBox="0 0 32 32"
-                            xml:space="preserve"
-                          >
-                            <path
-                              class="stone_een"
-                              d="M5,15H4c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h1V15z M21,11H11v3h10V11z M23,10v5
-                                    c0,0.551-0.449,1-1,1H10c-0.551,0-1-0.449-1-1v-5c0-0.551,0.449-1,1-1h12C22.551,9,23,9.449,23,10z M22,10H10v5h12V10z M26,18.02
-                                    c0,1.317-0.13,2.631-0.388,3.922l-1.129,5.646C24.202,28.991,22.971,30,21.541,30H10.459c-1.43,0-2.661-1.009-2.942-2.412
-                                    l-1.129-5.646C6.13,20.65,6,19.337,6,18.02V7c0-2.761,2.239-5,5-5h10c2.761,0,5,2.239,5,5V18.02z M24,10c0-1.103-0.897-2-2-2H10
-                                    c-1.103,0-2,0.897-2,2v5c0,1.103,0.897,2,2,2h12c1.103,0,2-0.897,2-2V10z M28,10h-1v5h1c0.552,0,1-0.448,1-1v-3
-                                    C29,10.448,28.552,10,28,10z"
-                            />
-                          </svg>
-                        </div>
-                        <div class="">
-                          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                            Stainless Steel Welding
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="card shadow card-bottom h-100">
-                    <div
-                      class="card-body d-flex justify-content-center align-items-center"
-                    >
-                      <div class="text-center">
-                        <div class="mb-1">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            class="bi text-body-secondary flex-shrink-0 me-3"
-                            width="1.75em"
-                            height="1.75em"
-                          >
-                            <path
-                              d="M240.8 4.8C250.3 10.6 256 20.9 256 32v72h89c3.6-13.8 16.1-24 31-24h88c26.5 0 48 21.5 48 48s-21.5 48-48 48H376c-14.9 0-27.4-10.2-31-24H256v72c0 11.1-5.7 21.4-15.2 27.2s-21.2 6.4-31.1 1.4l-192-96C6.8 151.2 0 140.1 0 128s6.8-23.2 17.7-28.6l192-96c9.9-5 21.7-4.4 31.1 1.4zM288 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H320c-17.7 0-32-14.3-32-32V256zM32 384h96c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32zm192 0H480c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32z"
-                            />
-                          </svg>
-                        </div>
-                        <div class="">
-                          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                            Masonry
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="card shadow card-bottom h-100">
-                    <div
-                      class="card-body d-flex justify-content-center align-items-center"
-                    >
-                      <div class="text-center">
-                        <div class="mb-1">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 640 512"
-                            class="bi text-body-secondary flex-shrink-0 me-3"
-                            width="1.75em"
-                            height="1.75em"
-                          >
-                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                              d="M48 32C21.5 32 0 53.5 0 80L0 336c0 26.5 21.5 48 48 48l17.1 0c7.8-54.3 54.4-96 110.9-96s103.1 41.7 110.9 96L488 384l8 0 112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-240c0-26.5-21.5-48-48-48L48 32zM80 96c8.8 0 16 7.2 16 16l0 131.2c-11.4 5.9-22.2 12.9-32 21L64 112c0-8.8 7.2-16 16-16zm96 128c-5.4 0-10.7 .2-16 .7L160 112c0-8.8 7.2-16 16-16s16 7.2 16 16l0 112.7c-5.3-.5-10.6-.7-16-.7zm80 19.2L256 112c0-8.8 7.2-16 16-16s16 7.2 16 16l0 152.2c-9.8-8.1-20.6-15.2-32-21zM368 96c8.8 0 16 7.2 16 16l0 192c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-192c0-8.8 7.2-16 16-16zm112 16l0 192c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-192c0-8.8 7.2-16 16-16s16 7.2 16 16zM176 480a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-112a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
-                            />
-                          </svg>
-                        </div>
-                        <div class="">
-                          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                            Truck and Trailer Repair
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br />
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="card shadow card-bottom h-100">
-                    <div
-                      class="card-body d-flex justify-content-center align-items-center"
-                    >
-                      <div class="text-center">
-                        <div class="mb-1">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="bi text-body-secondary flex-shrink-0 me-3"
-                            width="1.75em"
-                            height="1.75em"
-                            viewBox="0 0 576 512"
-                          >
-                            <path
-                              d="M0 112.5V422.3c0 18 10.1 35 27 41.3c87 32.5 174 10.3 261-11.9c79.8-20.3 159.6-40.7 239.3-18.9c23 6.3 48.7-9.5 48.7-33.4V89.7c0-18-10.1-35-27-41.3C462 15.9 375 38.1 288 60.3C208.2 80.6 128.4 100.9 48.7 79.1C25.6 72.8 0 88.6 0 112.5zM288 352c-44.2 0-80-43-80-96s35.8-96 80-96s80 43 80 96s-35.8 96-80 96zM64 352c35.3 0 64 28.7 64 64H64V352zm64-208c0 35.3-28.7 64-64 64V144h64zM512 304v64H448c0-35.3 28.7-64 64-64zM448 96h64v64c-35.3 0-64-28.7-64-64z"
-                            />
-                          </svg>
-                        </div>
-                        <div class="">
-                          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                            Free Estimates
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr />
-
-      <section>
-        <div class="container-fluid col-xl-10 col-xxl-8 px-4 py-5">
-          <h1
-            style="
-              border-left: 4px solid var(--accent-color);
-              padding-left: 15px;
-            "
-            class="pb-2"
-          >
-            Portfolio
-          </h1>
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-touch="true"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div
-                  class="row row-cols-1 h-100 row-cols-lg-3 align-items-stretch g-4 py-5"
-                >
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal1"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_1.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="modal fade"
-                    id="exampleModal1"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_1.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_2.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="modal fade"
-                    id="exampleModal2"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_2.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal3"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_3.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="modal fade"
-                    id="exampleModal3"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_3.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal4"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_4.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="modal fade"
-                    id="exampleModal4"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_4.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal5"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_5.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="modal fade"
-                    id="exampleModal5"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_5.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal6"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_6.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="modal fade"
-                    id="exampleModal6"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_6.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div
-                  class="row row-cols-1 h-100 row-cols-lg-3 align-items-stretch g-4 py-5"
-                >
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal1"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_1.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="modal fade"
-                    id="exampleModal1"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_1.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_2.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="modal fade"
-                    id="exampleModal2"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_2.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal3"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_3.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="modal fade"
-                    id="exampleModal3"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_3.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal4"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_4.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="modal fade"
-                    id="exampleModal4"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_4.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal5"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_5.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="modal fade"
-                    id="exampleModal5"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_5.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="col"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal6"
-                    style="cursor: pointer"
-                  >
-                    <div
-                      class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                      style="
-                        background-image: url('./images/img_6.jpg');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                      "
-                    >
-                      <div
-                        style="height: 400px; width: auto"
-                        class="d-flex flex-column p-5 pb-3 text-shadow-1"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="modal fade"
-                    id="exampleModal6"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-body mx-auto">
-                          <img
-                            style="width: 100%; height: auto; display: block"
-                            src="./images/img_6.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr />
-      <section id="reviews">
-        <div
-          class="container-fluid col-xl-10 col-xxl-8 px-4 py-5"
-          id="hanging-icons"
-        >
-          <h1
-            style="
-              border-left: 4px solid var(--accent-color);
-              padding-left: 15px;
-            "
-            class="pb-2"
-          >
-            Reviews
-          </h1>
-          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="col d-flex align-items-start">
-              <!-- <div
-            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-          >
-            <svg class="bi" width="1em" height="1em">
-              <use xlink:href="#toggles2"></use>
-            </svg>
-          </div> -->
-              <div class="card shadow card-bottom">
-                <div class="card-body">
-                  <h3 class="fs-2 text-body-emphasis">⭐⭐⭐⭐⭐</h3>
-
-                  <p>
-                    5 stars for Carlos at CNB Welding! I needed a new railing
-                    after I took my flex wall down and I wanted it to match my
-                    other railings and the spiral staircase. It was difficult to
-                    find a metalworker in general to do this custom railing and
-                    even harder because it's a small job. However, Carlos was
-                    excellent. He responded right away and was able to come to
-                    my apartment and provide an estimate a few days later. The
-                    cost of the project was very well-priced. He was able to get
-                    the custom railing done in less than 2 weeks! And installed
-                    right after. It matched our original railing perfectly.
-                    Carlos was quick, responsive, and professional. Highly
-                    recommend for jobs big or small!
-                  </p>
-                  <small>- Catherine K.</small>
-                  <!-- <a href="#" class="btn btn-primary"> Primary button </a> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col d-flex align-items-start">
-              <!-- <div
-            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-          >
-            <svg class="bi" width="1em" height="1em">
-              <use xlink:href="#cpu-fill"></use>
-            </svg>
-          </div> -->
-              <div class="card shadow card-bottom">
-                <div class="card-body">
-                  <h3 class="fs-2 text-body-emphasis">⭐⭐⭐⭐⭐</h3>
-                  <p>
-                    I was contacted by Carlos from CNB Welding in regard to a
-                    48"mower deck that had some damage done to it by me trying
-                    to fix a small crack that I turned into big hole after I
-                    attempted to weld it myself which turned into a big mistake.
-                    Carlos contacted me and then came over a couple of days
-                    later and looked at my destruction of the mower deck and
-                    stated that he can fix it and reinforce it with no problem.
-                    He gave me a price that was very reasonable compared to a
-                    few others that I was quoted to repair the mower deck. He
-                    put the 48" mower deck in the back of his pickup and stated
-                    that he could drop it back off to me in a couple of days
-                    which was great. This was around 9:30am on a Sunday. At
-                    about 3:30 pm the same day I get a call and it was Carlos
-                    and he stated that he has completed the work and wanted to
-                    know if he could drop the mower deck back off to me. I was
-                    surprised and said sure. I was very pleased with the quality
-                    and speed that Carlos provided, and he turned it around
-                    super-fast and at a great price. I will definitely be using
-                    Carlos - CNB Welding for any future welding repairs that I
-                    come across needing and would recommend Carlos @ CNB Welding
-                    to anyone in a heartbeat. I have attached four Before photos
-                    of the damage that I did trying to fix the mower deck and
-                    then four more After photos of the repairs that Carlos
-                    provided me.
-                  </p>
-                  <small>- Edward F.</small>
-                </div>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <div class="card shadow card-bottom">
-                <div class="card-body">
-                  <h3 class="fs-2 text-body-emphasis">⭐⭐⭐⭐⭐</h3>
-                  <p>
-                    I had major frame rust in my 2001 ford mustang. It was
-                    getting bad and I had a massive hole in my frame. I reached
-                    out to Carlos for an estimate and heard back almost
-                    immediately. He removed all the rust and welded in a new
-                    stronger piece of sheet metal. It came out amazing and the
-                    frame is now stronger than factory. Would definitely
-                    recommend him to anyone needing welding. 10 out of 10 work.
-                  </p>
-                  <small>- Matthew P.</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr />
-      <section id="contact">
-        <div class="container-fluid col-xl-10 col-xxl-8 px-4 py-5">
-          <div class="row gy-3 g-lg-5 py-5">
-            <div class="col-lg-4 text-center text-lg-start">
-              <h1
-                style="
-                  border-left: 4px solid var(--accent-color);
-                  padding-left: 15px;
-                "
-                class="display-4 fw-bold lh-1 mb-3"
-              >
-                Contact Us
-              </h1>
-              <p class="col-lg-10 fs-4">
-                If you have any questions or would like to request an estimate,
-                feel free to give us a call or send a message via the form
-                <i class="fa-solid fa-hand-point-right"></i>
-              </p>
-              <br />
-              <a
-                class="text-black"
-                style="text-decoration: none"
-                href="tel:16319125135"
-              >
-                <div class="card shadow card-bottom">
-                  <div class="card-body">
-                    <div class="row justify-content-between align-items-center">
-                      <div class="col-md-2">
-                        <svg
-                          class="bi text-body-secondary flex-shrink-0 me-3"
-                          width="1.75em"
-                          height="1.75em"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 512 512"
-                        >
-                          <path
-                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
-                          />
-                        </svg>
-                      </div>
-                      <div class="col-md-10">
-                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                          (631) 912-5135
-                        </h3>
-                        <small>Click to Call!</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-10 mx-auto col-lg-8">
-              <form
-                class="p-4 p-md-5 shadow border rounded-3 bg-body-tertiary"
-                netlify
-                method="POST"
-                data-form-type="contact"
-              >
-                <div class="form-floating mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="floatingInput"
-                    name="email"
-                    placeholder="name@example.com"
-                    data-dashlane-rid="31d497bc46bd990c"
-                    data-form-type="email"
-                    data-kwimpalastatus="alive"
-                    data-kwimpalaid="1711164646505-0"
-                  />
-                  <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingName"
-                    name="name"
-                    placeholder="Full Name"
-                  />
-                  <label for="floatingName">Name</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input
-                    type="tel"
-                    name="phone"
-                    class="form-control"
-                    id="floatingPhone"
-                    placeholder="Phone"
-                  />
-                  <label for="floatingPhone">Phone</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <textarea
-                    name="message"
-                    class="form-control"
-                    id="message"
-                    style="height: 200px"
-                  ></textarea>
-                  <label for="xmessage">Message</label>
-                </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">
-                  Send Message
-                </button>
-                <hr class="my-4" />
-                <small class="text-body-secondary"
-                  >We will reach out within 24 hours.</small
-                >
-                <input
-                  type="hidden"
-                  name="_gotcha"
-                  style="display: none !important"
-                />
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="capabilities-strip" aria-label="Our specialties">
+      <div class="container strip-inner">
+        <span>CUSTOM WELDING</span><i aria-hidden="true">✳</i><span>METAL FABRICATION</span><i aria-hidden="true">✳</i><span>RAILINGS &amp; GATES</span><i aria-hidden="true">✳</i><span>MASONRY</span><i aria-hidden="true">✳</i><span>STRUCTURAL REPAIRS</span>
+      </div>
     </div>
 
-    <div class="container-fluid col-xl-10 col-xxl-8 px-4 py-5">
-      <footer
-        class="row gy-4 d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-      >
-        <div class="col-md-4">
-          <ul class="nav list-unstyled d-flex">
-            <li class="ms-3">
-              <a
-                style="
-                  background-color: #ff1a1a;
-                  height: 60px;
-                  width: 60px;
-                  padding: 10px;
-                  border-radius: 50%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  text-decoration: none;
-                "
-                target="_blank"
-                class="text-body-secondary"
-                href="https://www.yelp.com/biz/cnb-welding-and-masonry-south-huntington"
-              >
-                <i
-                  style="font-size: 30px; color: white"
-                  class="fa-brands fa-yelp"
-                ></i>
-              </a>
-            </li>
-            <li class="ms-3">
-              <a
-                class="text-body-secondary"
-                style="
-                  background-color: #3b5998;
-                  height: 60px;
-                  width: 60px;
-                  padding: 10px;
-                  border-radius: 50%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  text-decoration: none;
-                "
-                target="_blank"
-                href="https://www.facebook.com/Hercarlos76/"
-              >
-                <i
-                  style="font-size: 30px; color: white"
-                  class="fa-brands fa-facebook"
-                ></i>
-              </a>
-            </li>
-            <li class="ms-3">
-              <a
-                class="text-body-secondary"
-                style="
-                  background-color: #e4405f;
-                  height: 60px;
-                  width: 60px;
-                  padding: 10px;
-                  border-radius: 50%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  text-decoration: none;
-                "
-                href="#"
-                ><i
-                  style="font-size: 30px; color: white"
-                  class="fa-brands fa-instagram"
-                ></i
-              ></a>
-            </li>
-          </ul>
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container about-layout">
+        <div class="about-media" data-reveal>
+          <div class="about-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1744735973756-b2efa8be24c8?auto=format&amp;fit=crop&amp;w=1150&amp;q=82" alt="Craftsperson at work welding steel" width="1150" height="1300" loading="lazy" decoding="async" data-fallback="assets/fallback-welding.svg">
+          </div>
+          <div class="about-vertical-caption" aria-hidden="true">IT'S IN THE DETAILS.</div>
+          <div class="about-seal"><span>20+</span><small>YEARS OF<br>EXPERIENCE</small></div>
         </div>
-        <p class="col-md-4 mb-0 text-center text-body-secondary">
-          © 2024 CNB Welding
-        </p>
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link px-2 text-body-secondary">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#services" class="nav-link px-2 text-body-secondary"
-              >Services</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#portfolio" class="nav-link px-2 text-body-secondary"
-              >Portfolio</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#reviews" class="nav-link px-2 text-body-secondary"
-              >Reviews</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link px-2 text-body-secondary"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </footer>
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow"><span class="line"></span> GET TO KNOW CNB</p>
+          <h2 class="section-heading" id="about-heading">GOOD WORK.<br><em>NO SHORTCUTS.</em></h2>
+          <p class="section-lede">A family-owned business with over two decades of hands-on experience.</p>
+          <p>At CNB Welding &amp; Masonry, we believe the little details make a big difference. Whether you're looking for a custom railing, a dependable repair, or an outdoor masonry project, we approach every job with the same care and craftsmanship.</p>
+          <p>We take on projects of all sizes, listen to what you need, and work to deliver a finished result you can feel good about.</p>
+          <div class="about-points">
+            <div><span class="check-mark" aria-hidden="true">✓</span><div><strong>Family-owned &amp; experienced</strong><small>More than 20 years in the trade.</small></div></div>
+            <div><span class="check-mark" aria-hidden="true">✓</span><div><strong>Small jobs. Big jobs.</strong><small>Custom projects, fixes, and everything between.</small></div></div>
+            <div><span class="check-mark" aria-hidden="true">✓</span><div><strong>Hablamos Español</strong><small>We're happy to speak with you in Spanish.</small></div></div>
+          </div>
+          <a class="text-link dark-link" href="#contact">Let's talk about your project <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-top" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="line"></span> WHAT WE DO</p>
+            <h2 class="section-heading" id="services-heading">THE SKILL TO<br><em>GET IT DONE.</em></h2>
+          </div>
+          <div class="section-top-aside"><p>Reliable craftsmanship for your home, property, business, or equipment. Tell us what you have in mind.</p><a class="text-link dark-link" href="#contact">Ask for an estimate <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="services-grid">
+          <article class="service-card" data-reveal>
+            <div class="service-card-top"><span class="service-number">01 /</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M9 48V16m46 32V16M9 26h46M9 37h46M20 16v32m24-32v32"/></svg></div>
+            <h3>Custom Railings,<br>Gates &amp; Fences</h3>
+            <p>Metalwork that combines everyday function with the look you want for your home or property.</p>
+            <a href="#contact" aria-label="Get an estimate for railings, gates and fences">Discuss a project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card" data-reveal>
+            <div class="service-card-top"><span class="service-number">02 /</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 50 50 14M13 17l34 34M34 10l20 20M10 34l20 20M23 10h7M10 10v7M54 47v7h-7"/></svg></div>
+            <h3>Welding &amp;<br>Metal Fabrication</h3>
+            <p>Custom welding and repairs, including aluminum and stainless steel, tailored to your needs.</p>
+            <a href="#contact" aria-label="Get an estimate for welding and metal fabrication">Discuss a project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card" data-reveal>
+            <div class="service-card-top"><span class="service-number">03 /</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M6 25h52v28H6zM6 39h52M22 25v14M42 39v14M13 12l38 0M22 12v13M42 12v13"/></svg></div>
+            <h3>Masonry &amp;<br>Outdoor Spaces</h3>
+            <p>Patios, driveways, retaining walls, stonework, waterfalls, and ponds made for the outdoors.</p>
+            <a href="#contact" aria-label="Get an estimate for masonry and outdoor work">Discuss a project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card" data-reveal>
+            <div class="service-card-top"><span class="service-number">04 /</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M6 22h34v23H6zM40 29h10l8 9v7H40zM16 45a5 5 0 1 0 10 0 5 5 0 0 0-10 0ZM46 45a5 5 0 1 0 10 0 5 5 0 0 0-10 0Z"/></svg></div>
+            <h3>Truck &amp;<br>Trailer Repairs</h3>
+            <p>Welding repairs and reinforcement for trailers, truck components, and worn or damaged metal parts.</p>
+            <a href="#contact" aria-label="Get an estimate for truck and trailer repairs">Discuss a project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card" data-reveal>
+            <div class="service-card-top"><span class="service-number">05 /</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="m12 51 17-17m5-5 18-18M10 43l11 11M42 10l12 12M23 10l31 31M9 24l16-15"/></svg></div>
+            <h3>Metal Repairs &amp;<br>Reinforcement</h3>
+            <p>From damaged equipment to broken metalwork, we help restore function and strength.</p>
+            <a href="#contact" aria-label="Get an estimate for metal repair work">Discuss a project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card service-highlight" data-reveal>
+            <div class="service-card-top"><span class="service-number">06 /</span><span class="highlight-star" aria-hidden="true">✳</span></div>
+            <h3>HAVE SOMETHING<br>ELSE IN MIND?</h3>
+            <p>Not every project fits neatly into a category. Tell us what you need and we'll discuss the possibilities.</p>
+            <a href="#contact" aria-label="Contact us about a custom project">Start a conversation <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-section" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="work-header" data-reveal>
+          <div><p class="eyebrow eyebrow-light"><span class="line"></span> RECENT PROJECTS</p><h2 class="section-heading section-heading-white" id="work-heading">A CLOSER LOOK<br><em>AT THE WORK.</em></h2></div>
+          <div><p>Every project has a story. Take a look at some of the details and finished work from CNB Welding &amp; Masonry.</p><span class="work-note">SELECT A PHOTO TO VIEW IT LARGER <span aria-hidden="true">↗</span></span></div>
+        </div>
+        <!-- Keep your original images/img_1.jpg ... img_6.jpg alongside this file. -->
+        <div class="gallery-grid" id="gallery-grid">
+          <button class="gallery-item gallery-item-large" type="button" data-gallery-index="0" aria-label="Enlarge project photo 1" data-reveal><img src="images/img_1.jpg" data-fallback="assets/gallery-placeholder.svg" alt="CNB Welding and Masonry completed project, photo 1" width="900" height="1050" loading="lazy" decoding="async"><span class="gallery-overlay"><span>PROJECT 01</span><strong>VIEW PHOTO <span aria-hidden="true">↗</span></strong></span></button>
+          <button class="gallery-item" type="button" data-gallery-index="1" aria-label="Enlarge project photo 2" data-reveal><img src="images/img_2.jpg" data-fallback="assets/gallery-placeholder.svg" alt="CNB Welding and Masonry completed project, photo 2" width="720" height="650" loading="lazy" decoding="async"><span class="gallery-overlay"><span>PROJECT 02</span><strong>VIEW PHOTO <span aria-hidden="true">↗</span></strong></span></button>
+          <button class="gallery-item" type="button" data-gallery-index="2" aria-label="Enlarge project photo 3" data-reveal><img src="images/img_3.jpg" data-fallback="assets/gallery-placeholder.svg" alt="CNB Welding and Masonry completed project, photo 3" width="720" height="650" loading="lazy" decoding="async"><span class="gallery-overlay"><span>PROJECT 03</span><strong>VIEW PHOTO <span aria-hidden="true">↗</span></strong></span></button>
+          <button class="gallery-item" type="button" data-gallery-index="3" aria-label="Enlarge project photo 4" data-reveal><img src="images/img_4.jpg" data-fallback="assets/gallery-placeholder.svg" alt="CNB Welding and Masonry completed project, photo 4" width="720" height="650" loading="lazy" decoding="async"><span class="gallery-overlay"><span>PROJECT 04</span><strong>VIEW PHOTO <span aria-hidden="true">↗</span></strong></span></button>
+          <button class="gallery-item" type="button" data-gallery-index="4" aria-label="Enlarge project photo 5" data-reveal><img src="images/img_5.jpg" data-fallback="assets/gallery-placeholder.svg" alt="CNB Welding and Masonry completed project, photo 5" width="720" height="650" loading="lazy" decoding="async"><span class="gallery-overlay"><span>PROJECT 05</span><strong>VIEW PHOTO <span aria-hidden="true">↗</span></strong></span></button>
+          <button class="gallery-item gallery-item-wide" type="button" data-gallery-index="5" aria-label="Enlarge project photo 6" data-reveal><img src="images/img_6.jpg" data-fallback="assets/gallery-placeholder.svg" alt="CNB Welding and Masonry completed project, photo 6" width="1100" height="670" loading="lazy" decoding="async"><span class="gallery-overlay"><span>PROJECT 06</span><strong>VIEW PHOTO <span aria-hidden="true">↗</span></strong></span></button>
+        </div>
+        <div class="work-footer"><span>YOUR IDEA. OUR CRAFT.</span><a class="button button-outline-light" href="#contact">Let's Build Something <span class="button-arrow" aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section process-section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="process-header" data-reveal><p class="eyebrow"><span class="line"></span> SIMPLE FROM THE START</p><h2 class="section-heading" id="process-heading">LET'S GET<br><em>TO WORK.</em></h2></div>
+        <div class="process-grid">
+          <article data-reveal><span class="process-step">01</span><div class="process-rule"></div><h3>Tell us your idea.</h3><p>Give us a call or fill out the form. Share what needs to be made, fixed, or improved.</p></article>
+          <article data-reveal><span class="process-step">02</span><div class="process-rule"></div><h3>Let's take a look.</h3><p>We'll discuss the details and provide a free estimate for your project.</p></article>
+          <article data-reveal><span class="process-step">03</span><div class="process-rule"></div><h3>We get it done.</h3><p>We bring the tools, experience, and attention to detail to the work.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="reviews-top" data-reveal><div><p class="eyebrow"><span class="line"></span> WORD GETS AROUND</p><h2 class="section-heading" id="reviews-heading">DON'T JUST<br><em>TAKE OUR WORD.</em></h2></div><p>We're proud of the work we do—and grateful for the people who trust us with their projects.</p></div>
+        <div class="review-grid">
+          <figure class="review-card" data-reveal><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Carlos was quick, responsive, and professional. Highly recommend for jobs big or small!”</blockquote><figcaption><span class="review-monogram" aria-hidden="true">CK</span><span><strong>Catherine K.</strong><small>Custom railing project</small></span></figcaption></figure>
+          <figure class="review-card" data-reveal><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“I was very pleased with the quality and speed that Carlos provided, and he turned it around super-fast and at a great price.”</blockquote><figcaption><span class="review-monogram" aria-hidden="true">EF</span><span><strong>Edward F.</strong><small>Welding repair</small></span></figcaption></figure>
+          <figure class="review-card" data-reveal><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Would definitely recommend him to anyone needing welding. 10 out of 10 work.”</blockquote><figcaption><span class="review-monogram" aria-hidden="true">MP</span><span><strong>Matthew P.</strong><small>Metal repair project</small></span></figcaption></figure>
+        </div>
+        <a class="text-link dark-link review-more" href="https://www.yelp.com/biz/cnb-welding-and-masonry-south-huntington" target="_blank" rel="noopener noreferrer">Visit our Yelp page <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-layout">
+        <div class="contact-intro" data-reveal>
+          <p class="eyebrow eyebrow-light"><span class="line"></span> HAVE A PROJECT IN MIND?</p>
+          <h2 class="section-heading section-heading-white" id="contact-heading">LET'S MAKE<br><em>IT HAPPEN.</em></h2>
+          <p>Big project or small repair, it starts with a conversation. Tell us what you're working on and we'll be happy to help.</p>
+          <div class="contact-primary"><span>GIVE US A CALL</span><a href="tel:+16319125135">(631) 912-5135 <span aria-hidden="true">↗</span></a></div>
+          <div class="contact-details"><div><strong>BASED IN</strong><span>South Huntington, New York</span></div><div><strong>ESTIMATES</strong><span>Free estimates</span></div><div><strong>LANGUAGES</strong><span>English &amp; Español</span></div></div>
+        </div>
+        <div class="contact-form-wrap" data-reveal>
+          <div class="form-heading"><span>START HERE</span><h3>Tell us about your project.</h3><p>Send us a few details and we'll get back to you.</p></div>
+          <!-- This form works on Netlify after deployment. For other hosts, connect a form handler. -->
+          <form id="contact-form" name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="visually-hidden"><label>Do not fill out: <input name="bot-field"></label></p>
+            <div class="form-row">
+              <div class="form-group"><label for="contact-name">Your name <span aria-hidden="true">*</span></label><input type="text" name="name" id="contact-name" autocomplete="name" placeholder="Full name" required maxlength="120"></div>
+              <div class="form-group"><label for="contact-phone">Phone number</label><input type="tel" name="phone" id="contact-phone" autocomplete="tel" placeholder="(631) 555-0123" maxlength="30"></div>
+            </div>
+            <div class="form-group"><label for="contact-email">Email address <span aria-hidden="true">*</span></label><input type="email" name="email" id="contact-email" autocomplete="email" placeholder="you@example.com" required maxlength="254"></div>
+            <div class="form-group"><label for="contact-service">What can we help with?</label><select name="service" id="contact-service"><option value="">Select a service (optional)</option><option>Custom railings, gates or fences</option><option>Welding or metal fabrication</option><option>Masonry or outdoor work</option><option>Truck or trailer repair</option><option>Metal repair or reinforcement</option><option>Something else</option></select></div>
+            <div class="form-group"><label for="contact-message">Tell us a little about your project <span aria-hidden="true">*</span></label><textarea name="message" id="contact-message" rows="5" placeholder="What are you looking to build or repair?" required maxlength="5000"></textarea></div>
+            <button class="button button-accent submit-button" type="submit">Send Your Message <span class="button-arrow" aria-hidden="true">↗</span></button>
+            <p class="form-fineprint">Or skip the form and <a href="tel:+16319125135">call us directly</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div><a class="brand footer-brand" href="#home" aria-label="CNB Welding and Masonry back to home"><span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M7 33 30 10h12L18 34H7Z" fill="currentColor"/><path d="m28 29 13-13v9L28 38H18l10-9Z" fill="currentColor"/><path d="M7 12h8L7 20v-8Z" fill="currentColor"/></svg></span><span class="brand-words"><strong>CNB <span>WELDING</span></strong><small>FABRICATION &amp; MASONRY</small></span></a><p>Honest craftsmanship. Work that lasts.<br>Family-owned and serving Long Island.</p></div>
+        <div class="footer-nav"><strong>EXPLORE</strong><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
+        <div class="footer-connect"><strong>GET IN TOUCH</strong><a class="footer-phone" href="tel:+16319125135">(631) 912-5135</a><p>South Huntington, NY</p><div class="social-links"><a href="https://www.yelp.com/biz/cnb-welding-and-masonry-south-huntington" target="_blank" rel="noopener noreferrer" aria-label="CNB Welding on Yelp">Yelp ↗</a><a href="https://www.facebook.com/Hercarlos76/" target="_blank" rel="noopener noreferrer" aria-label="CNB Welding on Facebook">Facebook ↗</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="copyright-year">2026</span> CNB Welding &amp; Masonry. All rights reserved.</span><a href="#home">Back to top ↑</a></div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </footer>
+
+  <dialog class="gallery-dialog" id="gallery-dialog" aria-label="Project photo viewer">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Close photo viewer">×</button>
+    <div class="dialog-frame"><img id="dialog-image" src="assets/gallery-placeholder.svg" alt="Project photo" width="1200" height="900"><div class="dialog-bottom"><span id="dialog-caption">PROJECT 01 / 06</span><div class="dialog-controls"><button id="dialog-prev" type="button" aria-label="Previous photo">←</button><button id="dialog-next" type="button" aria-label="Next photo">→</button></div></div></div>
+  </dialog>
+  <script src="assets/main.js" defer></script>
+</body>
 </html>
